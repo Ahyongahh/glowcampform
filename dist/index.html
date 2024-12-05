@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Form</title>
+  <!-- Links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- As a heading -->
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid d-flex justify-content-center">
+      <span class="navbar-brand mb-0 h1">Glow Camp Form</span>
+    </div>
+  </nav>
+
+  <div class="container d-flex flex-column align-items-center" style="margin-top: 2%;">
+    <form class="add" style="width: 100%; max-width: 500px;" id="form">
+
+      <div class="mb-3">
+        <label for="EnglishName" class="form-label" style="margin-bottom: 2%;">Name(English)</label>
+        <input type="text" class="form-control" name="EnglishName" id="EnglishName" aria-describedby="name"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="ChineseName" class="form-label" style="margin-bottom: 2%;">Name(中文)</label>
+        <input type="text" class="form-control" name="ChineseName" id="ChineseName" aria-describedby="name"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="NRIC" class="form-label" style="margin-bottom: 2%;">NRIC</label>
+        <input type="text" class="form-control" name="NRIC" id="NRIC" aria-describedby="NRIC"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Address" class="form-label" style="margin-bottom: 2%;">Address</label>
+        <input type="text" class="form-control" name="Address" id="Address" aria-describedby="Address"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Unit" class="form-label" style="margin-bottom: 2%;">Unit No.</label>
+        <input type="text" class="form-control" name="Unit" id="Unit" aria-describedby="Unit"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Postal" class="form-label" style="margin-bottom: 2%;">Postal Code</label>
+        <input type="number" class="form-control" name="Postal" id="Postal" aria-describedby="Postal"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Birthdate" class="form-label" style="margin-bottom: 2%;">Birthdate</label>
+        <input type="date" class="form-control" name="Birthdate" id="Birthdate" aria-describedby="birthdate"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Whatudoing" class="form-label" style="margin-bottom: 2%;">Academic Level/Working?</label>
+        <input type="text" class="form-control" name="Whatudoing" id="Whatudoing" aria-describedby="Whatudoing"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Child" class="form-label" style="margin-bottom: 2%;">Can your child come for camp?</label>
+        <select name="Child" id="Child" class="form-control" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="PTFT" class="form-label" style="margin-bottom: 2%;">Will he/she attend Part-Time/Full-Time?</label>
+        <select name="PTFT" id="PTFT" class="form-control" required>
+          <option value="Part-Time">Part-Time</option>
+          <option value="Full-Time">Full-Time</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="When" class="form-label" style="margin-bottom: 2%;">If Part-time, Please State When?</label>
+        <input type="text" class="form-control" name="When" id="When" aria-describedby="When"
+          style="margin-bottom: 2%;">
+      </div>
+
+      <div class="mb-3">
+        <label for="Allergies" class="form-label" style="margin-bottom: 2%;">Any Allergies?</label>
+        <input type="text" class="form-control" name="Allergies" id="Allergies" aria-describedby="name"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="NOKName" class="form-label" style="margin-bottom: 2%;">Next-Of-Kin Name</label>
+        <input type="text" class="form-control" name="NOKName" id="NOKName" aria-describedby="NOKName"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="NOKNumber" class="form-label" style="margin-bottom: 2%;">Next-Of-Kin Number</label>
+        <input type="NOKNumber" class="form-control" name="NOKNumber" id="NOKNumber" aria-describedby="NOKNumber"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="RStoChild" class="form-label" style="margin-bottom: 2%;">Relationship to Child</label>
+        <input type="text" class="form-control" name="RStoChild" id="RStoChild" aria-describedby="RStoChild"
+          style="margin-bottom: 2%;" required>
+      </div>
+
+      <p>By Signing, I am aware that while the youth ministry will do its best to ensure the safety of my child. However, the ministry is not liable for any accident or injuries that may be sustained by my child. 
+
+        通过签名，我知道虽然GLOW团契会尽最大努力确保我孩子的安全，但是GLOW团契对我的孩子可能遭受的任何事故或伤害不承担责任。</p>
+
+      <div class="mb-3">
+        <label for="signature" class="form-label">Signature</label>
+        <canvas id="signatureCanvas" name="signature" class="border" style="width: 100%; height: 200px;"></canvas>
+        <button type="button" class="btn btn-secondary mt-2" onclick="clearCanvas()">Clear Signature</button>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // Signature pad logic
+    const canvas = document.getElementById('signatureCanvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    let isDrawing = false;
+
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      ctx.beginPath();
+      ctx.moveTo(e.offsetX, e.offsetY);
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+      if (isDrawing) {
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+      }
+    });
+
+    canvas.addEventListener('mouseup', () => {
+      isDrawing = false;
+      ctx.closePath();
+    });
+
+    function clearCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    // Convert canvas to base64 string for form submission
+    function getSignatureBase64() {
+      return canvas.toDataURL('image/png');
+    }
+
+    // Form submission logic
+    document.querySelector('.add').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Capture form data
+      const formData = {
+        EnglishName: document.getElementById('EnglishName').value,
+        ChineseName: document.getElementById('ChineseName').value,
+        NRIC: document.getElementById('NRIC').value,
+        Address: document.getElementById('Address').value,
+        Unit: document.getElementById('Unit').value,
+        Postal: parseInt(document.getElementById('Postal').value, 10),
+        Birthdate: new Date(document.getElementById('Birthdate').value),
+        Child: document.getElementById('Child').value,
+        signature: getSignatureBase64(), // Get base64 string from canvas
+        Allergies: document.getElementById('Allergies').value,
+        PTFT: document.getElementById('PTFT').value,
+        When: document.getElementById('When').value,
+        NOKName: document.getElementById('NOKName').value,
+        NOKNumber: parseInt(document.getElementById('NOKNumber').value, 10),
+        Whatudoing: document.getElementById('Whatudoing').value,
+        RStoChild: document.getElementById('RStoChild').value,
+      };
+
+      // Log data to console (for testing)
+      console.log('Form Data:', formData);
+
+      // Use your existing Firebase logic to add the document
+      // e.g., addDoc(colRef, formData)
+    });
+  </script>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
